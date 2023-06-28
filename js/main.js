@@ -24,6 +24,6 @@ function stopWheelZoom(event) {
   document.addEventListener('DOMMouseScroll', stopWheelZoom);
 
 
-document.addEventListener('touchmove', function (event) {
-  if (event.scale !== 1) { event.preventDefault(); }
-}, { passive: false });
+// document.addEventListener('touchmove', function (event) {
+//   if (event.scale !== 1) { event.preventDefault(); }
+// }, { passive: false });
