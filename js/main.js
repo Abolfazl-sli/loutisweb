@@ -9,19 +9,19 @@ window.addEventListener("scroll" , (e)=>{
 
 
 
-function stopWheelZoom(event) {
-    if (event.ctrlKey == true) {
-      event.preventDefault();
-    }
-  }
-  function stopKeyZoom(event) {
-    if (event.ctrlKey && [48,61,96,107,109,187,189].indexOf(event.keyCode) > -1) {
-      event.preventDefault();
-    }
-  }
-  document.addEventListener("keydown", stopKeyZoom);
-  document.addEventListener('mousewheel', stopWheelZoom);
-  document.addEventListener('DOMMouseScroll', stopWheelZoom);
+// function stopWheelZoom(event) {
+//     if (event.ctrlKey == true) {
+//       event.preventDefault();
+//     }
+//   }
+//   function stopKeyZoom(event) {
+//     if (event.ctrlKey && [48,61,96,107,109,187,189].indexOf(event.keyCode) > -1) {
+//       event.preventDefault();
+//     }
+//   }
+//   document.addEventListener("keydown", stopKeyZoom);
+//   document.addEventListener('mousewheel', stopWheelZoom);
+//   document.addEventListener('DOMMouseScroll', stopWheelZoom);
 
 
 // document.addEventListener('touchmove', function (event) {
