@@ -22,3 +22,8 @@ function stopWheelZoom(event) {
   document.addEventListener("keydown", stopKeyZoom);
   document.addEventListener('mousewheel', stopWheelZoom);
   document.addEventListener('DOMMouseScroll', stopWheelZoom);
+
+
+document.addEventListener('touchmove', function (event) {
+  if (event.scale !== 1) { event.preventDefault(); }
+}, { passive: false });
